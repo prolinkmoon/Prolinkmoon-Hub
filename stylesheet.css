@@ -497,6 +497,8 @@ nav {
 }
 .guide {
     right: 12%;
+    display: none;
+    visibility: hidden;
     bottom: 10%;
     position: absolute;
     background: none;
