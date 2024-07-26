@@ -61,7 +61,7 @@ async function showPopupCelestia() {
   
   Swal.fire({
     title: "Celestia",
-    imageUrl: "/banner/celestia-banner.png",
+    imageUrl: "banner/celestia-banner.png",
     imageWidth: 400,
     imageHeight: 200,
     imageAlt: "logo image",
@@ -158,7 +158,7 @@ async function showPopupCosmos() {
   
   Swal.fire({
     title: "Cosmos",
-    imageUrl: "/banner/cosmos-banner.png",
+    imageUrl: "banner/cosmos-banner.png",
     imageWidth: 400,
     imageHeight: 200,
     imageAlt: "logo image",
@@ -255,7 +255,7 @@ async function showPopupNeutron() {
   
   Swal.fire({
     title: "Neutron",
-    imageUrl: "/banner/neutron-banner.png",
+    imageUrl: "banner/neutron-banner.png",
     imageWidth: 400,
     imageHeight: 200,
     imageAlt: "logo image",
