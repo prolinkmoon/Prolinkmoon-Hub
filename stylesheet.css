@@ -11,7 +11,9 @@
 /* html, body, section {
     overflow-x: hidden;
 } */
-
+button {
+    cursor: pointer;
+}
 /* NAVBAR  */
 nav {
     position: fixed;
@@ -810,4 +812,124 @@ nav {
 }
 
 
+/* PopUp CSS */
 
+#swal2-html-container {
+    text-align: unset;
+    margin-top: 0px;
+}
+.swal2-image {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.swal2-title {
+    text-align: unset;
+}
+
+.paragraph {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+.stake-with-us {
+    margin-top: 12px;
+    font-weight: 500;
+}
+.services {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+/* BUTTON STYLE */
+a:link {
+    text-decoration: none;
+}
+.btn-stake-now {
+    width:98px;
+    height:32px;
+    background:black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px  rgba(255,255,255,0.6);
+    transition: 0.5s;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .btn-stake-now:before {
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    width: 0;
+    height: 0;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 4px;
+    animation: border-top-right 3s infinite alternate;
+  }
+  .btn-stake-now:after {
+    content: "";
+    position: absolute;
+    right:0;
+    bottom:0;
+    width: 0;
+    height: 0;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-radius: 4px;
+    animation: border-bottom-left 3s infinite alternate;
+  }
+  .btn-stake-now:hover {
+    background:rgb(19, 17, 17);
+    box-shadow: 0px 0px 10px  rgba(255,255,255,0.6);;
+  }
+  @keyframes border-top-right {
+    0%    {width:0px;   height:0px;}
+    25%   {width:98px; height:0px;}
+    50%   {width:98px; height:32px;}
+    100%  {width:98px; height:32px;}
+  }
+  @keyframes border-bottom-left {
+    0%    {width:0px;   height:0px; opacity: 0;}
+    50%   {width:0px;   height:0px; opacity: 0;}
+    50.1% {width:0px;   height:0px; opacity: 1;}
+    75%   {width:98px; height:0px; opacity: 1;}
+    100%  {width:98px; height:32px;opacity: 1;}
+  }
+
+.btn101 {
+    background-color: black;
+    border: 1px solid #ffffff83;
+    border-radius: 2px;
+    font-size: 14px;
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 24px;
+
+    margin-right: 6px;
+    margin-bottom: 6px;
+
+    cursor: pointer;
+}
+.btn101:hover {
+    border: 1px solid #ffffffe0;
+    color: #ffffffd7;
+}
+
+
+#wrapBlockHeight {
+    display: flex;
+    gap: 10px;
+}
+
+#seconds {
+    color: #a1a1a1;
+}

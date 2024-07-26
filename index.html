@@ -6,7 +6,8 @@
     
     <link rel="stylesheet" href="stylesheet.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <script src="dist/sweetalert2.all.min.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="fav_icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="fav_icon/favicon-32x32.png">
@@ -40,7 +41,7 @@
                     <h2><span style="color: #F0B90B;">Prolinkmoon</span>, Empowering Decentralization.</h2>
                     <h1>Blockchain validator, Node operator <br>
                         & infra-service provider</h1>
-                    <p class="hero-p">In the opportunity blockchain adoption period, we provide research platforms & guidelines on blockchain and web3 technology.</p>
+                    <p class="hero-p">Committed with security, transparency and integrity as a service/provider. Delegate with us! with support technical no-risk for your commission!</p>
                     <div class="wrap-btn-hero">
                         <button class="startted-btn" ><a href="#lfg">Get Started</a></button>
                         <button class="about-btn" ><a href="https://prolinkmoon.com">About Us</a></button>
@@ -76,10 +77,10 @@
         <div class="bg-hub">
             <div class="wrap-margin-hub">
                 <div class="wrap-hub">
-                <div class="img-app-wrap"><img class="img-app" src="assets/prolinkmoon-apps-101.png" alt=""></div>
+                <div class="img-app-wrap"><img class="img-app" src="assets/prolinkmoon-101.png" alt=""></div>
                     <div class="hub">
-                        <h1>Prolinkmoon-hub 101</h1>
-                        <p>We welcome to anyone who wants to learn or expand their knowledge about blockchain technology to expert level. even for those of you who don't have a dev-tech background. We made the guide so that it is easy for everyone to understand and please ask if you have any questions.
+                        <h1>Prolinkmoon 101</h1>
+                        <p>Hi, welcome 👋 we are a DevOps focused on blockchain-infra. We really care about security, reliability, transparency and optimized-apps / cost. Let's see our <a href="" >docs ↗</a> how prolinkmoon manage all-infra.
                         <br>
                         <br>
                         To our delegators we are very grateful for participating in the network. We really appreciate your delegation, we are committed to maintaining suitability or quality as a provider.</p>
@@ -121,461 +122,132 @@
                 </div>
                 <div class="display-main">
                     <div class="wrap_">
-                        <!-- LIST OF PROJECT -->
-
-
-
-
-                <!-- AVAIL -->
-                        <div class="project">
-                            <div class="name-project">
-                                <div class="wrap-nm-pr">
-                                    <img src="assets/img-project/avail.png" alt="">
-                                    <h1>Avail</h1>
-                                </div>
-                                <!-- STATUS -->
-                                <div class="active-wr">
-                                    <!-- use classname "active-status" "mt-status" "not-active-status" -->
-                                    <!-- example = IF ACTIVE -->
-                                    <div class="active-status"></div>
-                                </div>
-                                
+                    <!-- LIST OF PROJECT -->
+                    <!-- celestia -->
+                    <div class="project">
+                        <div class="name-project">
+                            <div class="wrap-nm-pr">
+                                <img src="assets/img-project/celestia.png" alt="">
+                                <h1>Celestia</h1>
                             </div>
-                            <!-- SELECT YOUR SERVICE -->
-                            <div class="list-on-run">
-                                <!-- NETWORK TYPE -->
-                                <!-- MAINNET -->
-                                <!-- <div class="mainnet">
-                                    <div class="cl-mn"></div>
-                                    <p>Mainnet</p>
-                                </div> -->
-                                <!-- TESTNET -->
-                                <div class="testnet">
-                                    <div class="cl-ts"></div>
-                                    <p>Testnet</p>
-                                </div>
-                                <!-- VALIDATOR -->
-                                <div class="validator">
-                                    <div class="cl-vl"></div>
-                                    <p>Fullnode</p>
-                                </div>
-                                <!-- NODE / FULLNODE -->
-                                <div class="node">
-                                    <div class="cl-nd"></div>
-                                    <p>Light-Node</p>
-                                </div>
+                            <!-- STATUS -->
+                            <div class="active-wr">
+                                <div class="active-status"></div><!-- use classname "active-status" "mt-status" "not-active-status" -->
+                            </div>    
+                        </div>
+                        <!-- SELECT YOUR SERVICE -->
+                        <div class="list-on-run">
+                            <!-- NETWORK TYPE -->
+                            <!-- MAINNET -->
+                            <div class="mainnet">
+                                <div class="cl-mn"></div>
+                                <p>Mainnet</p>
                             </div>
-                            <div class="wrap-btn-main">
-                                <button class="delegate"><a href="list/avail/" >Details</a></button>
-                                <button class="guide"><a href="https://docs.prolinkmoon.com/list/avail/light-node.html" target="_blank">Guide</a></button>
+                            <!-- TESTNET -->
+                            <!-- <div class="testnet">
+                                <div class="cl-ts"></div>
+                                <p>Testnet</p>
+                            </div> -->
+                            <!-- VALIDATOR -->
+                            <div class="validator">
+                                <div class="cl-vl"></div>
+                                <p>Validator</p>
+                            </div>
+                            <!-- NODE / FULLNODE -->
+                            <div class="node">
+                                <div class="cl-nd"></div>
+                                <p>Node</p>
                             </div>
                         </div>
+                        <div class="wrap-btn-main">
+                            <button class="delegate" onclick="showPopupCelestia()"><a>Details</a></button>
+                            <button class="guide"><a href="https://docs.prolinkmoon.com/list/avail/light-node.html" target="_blank">Guide</a></button>
+                        </div>
+                    </div>
 
+                    <!-- cosmos -->
+                    <div class="project">
+                        <div class="name-project">
+                            <div class="wrap-nm-pr">
+                                <img src="assets/img-project/cosmos.png" alt="">
+                                <h1>Cosmos</h1>
+                            </div>
+                            <!-- STATUS -->
+                            <div class="active-wr">
+                                <div class="active-status"></div><!-- use classname "active-status" "mt-status" "not-active-status" -->
+                            </div>    
+                        </div>
+                        <!-- SELECT YOUR SERVICE -->
+                        <div class="list-on-run">
+                            <!-- NETWORK TYPE -->
+                            <!-- MAINNET -->
+                            <div class="mainnet">
+                                <div class="cl-mn"></div>
+                                <p>Mainnet</p>
+                            </div>
+                            <!-- TESTNET -->
+                            <!-- <div class="testnet">
+                                <div class="cl-ts"></div>
+                                <p>Testnet</p>
+                            </div> -->
+                            <!-- VALIDATOR -->
+                            <div class="validator">
+                                <div class="cl-vl"></div>
+                                <p>Validator</p>
+                            </div>
+                            <!-- NODE / FULLNODE -->
+                            <div class="node">
+                                <div class="cl-nd"></div>
+                                <p>Node</p>
+                            </div>
+                        </div>
+                        <div class="wrap-btn-main">
+                            <button class="delegate" onclick="showPopupCosmos()"><a>Details</a></button>
+                            <button class="guide"><a href="https://docs.prolinkmoon.com/list/avail/light-node.html" target="_blank">Guide</a></button>
+                        </div>
+                    </div>
 
-                <!-- dymesion -->
-                        <div class="project">
-                            <div class="name-project">
-                                <div class="wrap-nm-pr">
-                                    <img src="assets/img-project/dymension.png" alt="">
-                                    <h1>dymension</h1>
-                                </div>
-                                <!-- STATUS -->
-                                <div class="active-wr">
-                                    <!-- use classname "active-status" "mt-status" "not-active-status" -->
-                                    <!-- example = IF ACTIVE -->
-                                    <div class="active-status"></div>
-                                </div>
-                                
+                    <!-- neutron -->
+                    <div class="project">
+                        <div class="name-project">
+                            <div class="wrap-nm-pr">
+                                <img src="assets/img-project/neutron.jpeg" alt="">
+                                <h1>Neutron</h1>
                             </div>
-                            <!-- SELECT YOUR SERVICE -->
-                            <div class="list-on-run">
-                                <!-- NETWORK TYPE -->
-                                <!-- MAINNET -->
-                                <!-- <div class="mainnet">
-                                    <div class="cl-mn"></div>
-                                    <p>Mainnet</p>
-                                </div> -->
-                                <!-- TESTNET -->
-                                <div class="mainnet">
-                                    <div class="cl-mn"></div>
-                                    <p>Mainnet</p>
-                                </div>
-                                <!-- VALIDATOR -->
-                                <div class="validator">
-                                    <div class="cl-vl"></div>
-                                    <p>Validator</p>
-                                </div>
-                                <!-- NODE / FULLNODE -->
-                                <div class="node">
-                                    <div class="cl-nd"></div>
-                                    <p>Fullnode</p>
-                                </div>
+                            <!-- STATUS -->
+                            <div class="active-wr">
+                                <div class="active-status"></div><!-- use classname "active-status" "mt-status" "not-active-status" -->
+                            </div>    
+                        </div>
+                        <!-- SELECT YOUR SERVICE -->
+                        <div class="list-on-run">
+                            <!-- NETWORK TYPE -->
+                            <!-- MAINNET -->
+                            <div class="mainnet">
+                                <div class="cl-mn"></div>
+                                <p>Mainnet</p>
                             </div>
-                            <div class="wrap-btn-main">
-                                <button class="delegate"><a href="list/dymension/">Details</a></button>
-                                <button class="guide"><a href="https://docs.prolinkmoon.xyz/101/welcome.html">Guide</a></button>
+                            <!-- TESTNET -->
+                            <!-- <div class="testnet">
+                                <div class="cl-ts"></div>
+                                <p>Testnet</p>
+                            </div> -->
+                            <!-- VALIDATOR -->
+                            <div class="validator">
+                                <div class="cl-vl"></div>
+                                <p>Validator</p>
+                            </div>
+                            <!-- NODE / FULLNODE -->
+                            <div class="node">
+                                <div class="cl-nd"></div>
+                                <p>Node</p>
                             </div>
                         </div>
-            <!-- Dusk -->
-                <div class="project">
-                    <div class="name-project">
-                        <div class="wrap-nm-pr">
-                            <img src="https://api.prolinkmoon.com/public/dusk.jpg" alt="">
-                            <h1>Dusk</h1>
+                        <div class="wrap-btn-main">
+                            <button class="delegate" onclick="showPopupNeutron()"><a>Details</a></button>
+                            <button class="guide"><a href="https://docs.prolinkmoon.com/list/avail/light-node.html" target="_blank">Guide</a></button>
                         </div>
-                        <!-- STATUS -->
-                        <div class="active-wr">
-                            <!-- use classname "active-status" "mt-status" "not-active-status" -->
-                            <!-- example = IF ACTIVE -->
-                            <div class="active-status"></div>
-                        </div>
-                        
-                    </div>
-                    <!-- SELECT YOUR SERVICE -->
-                    <div class="list-on-run">
-                        <!-- NETWORK TYPE -->
-                        <!-- MAINNET -->
-                        <!-- <div class="mainnet">
-                            <div class="cl-mn"></div>
-                            <p>Mainnet</p>
-                        </div> -->
-                        <!-- TESTNET -->
-                        <div class="testnet">
-                            <div class="cl-ts"></div>
-                            <p>Testnet</p>
-                        </div>
-                        <!-- VALIDATOR -->
-                        <!-- <div class="validator">
-                            <div class="cl-vl"></div>
-                            <p>Validator</p>
-                        </div> -->
-                        <!-- NODE / FULLNODE -->
-                        <div class="node">
-                            <div class="cl-nd"></div>
-                            <p>Node</p>
-                        </div>
-                    </div>
-                    <div class="wrap-btn-main">
-                        <button class="delegate"><a href="list/dusk/" >Details</a></button>
-                        <button class="guide"><a href="https://docs.prolinkmoon.xyz/101/list/dusk/ITN-node.html" target="_blank">Guide</a></button>
-                    </div>
-                </div>
-
-                 <!-- CELESTIA -->
-                        <div class="project">
-                            <div class="name-project">
-                                <div class="wrap-nm-pr">
-                                    <img src="assets/img-project/celestia.png" alt="">
-                                    <h1>Celestia</h1>
-                                </div>
-                                <!-- STATUS -->
-                                <div class="active-wr">
-                                    <!-- use classname "active-status" "mt-status" "not-active-status" -->
-                                    <!-- example = IF ACTIVE -->
-                                    <div class="mt-status"></div>
-                                </div>
-                                
-                            </div>
-                            <!-- SELECT YOUR SERVICE -->
-                            <div class="list-on-run">
-                                <!-- NETWORK TYPE -->
-                                <!-- MAINNET -->
-                                <div class="mainnet">
-                                    <div class="cl-mn"></div>
-                                    <p>Mainnet</p>
-                                </div>
-                                <!-- TESTNET -->
-                                <!-- <div class="testnet">
-                                    <div class="cl-ts"></div>
-                                    <p>Testnet</p>
-                                </div> -->
-                                <!-- VALIDATOR -->
-                                <div class="validator">
-                                    <div class="cl-vl"></div>
-                                    <p>Validator</p>
-                                </div>
-                                <!-- NODE / FULLNODE -->
-                                <div class="node">
-                                    <div class="cl-nd"></div>
-                                    <p>Node</p>
-                                </div>
-                            </div>
-                            <div class="wrap-btn-main">
-                                <button class="delegate"><a href="list/celestia/">Details</a></button>
-                                <button class="guide"><a href="">Guide</a></button>
-                            </div>
-                        </div>       
-
-            <!-- TEMPLATE -->
-                <div class="project">
-                    <div class="name-project">
-                        <div class="wrap-nm-pr">
-                            <img src="assets/img-project/cosmos.png" alt="">
-                            <h1>Cosmos</h1>
-                        </div>
-                        <!-- STATUS -->
-                        <div class="active-wr">
-                            <!-- use classname "active-status" "mt-status" "not-active-status" -->
-                            <!-- example = IF ACTIVE -->
-                            <div class="mt-status"></div>
-                        </div>
-                        
-                    </div>
-                    <!-- SELECT YOUR SERVICE -->
-                    <div class="list-on-run">
-                        <!-- NETWORK TYPE -->
-                        <!-- MAINNET -->
-                        <div class="mainnet">
-                            <div class="cl-mn"></div>
-                            <p>Mainnet</p>
-                        </div>
-                        <!-- TESTNET -->
-                        <!-- <div class="testnet">
-                            <div class="cl-ts"></div>
-                            <p>Testnet</p>
-                        </div> -->
-                        <!-- VALIDATOR -->
-                        <div class="validator">
-                            <div class="cl-vl"></div>
-                            <p>Validator</p>
-                        </div>
-                        <!-- NODE / FULLNODE -->
-                        <div class="node">
-                            <div class="cl-nd"></div>
-                            <p>Node</p>
-                        </div>
-                    </div>
-                    <div class="wrap-btn-main">
-                        <button class="delegate"><a href="/list/cosmos/">Details</a></button>
-                        <button class="guide"><a href="https://docs.prolinkmoon.xyz/101/welcome.html">Guide</a></button>
-                    </div>
-                </div>
-<!-- END-OF-TEMPLATE -->
-        
-         
-        <!-- Espresso -->
-        <div class="project">
-            <div class="name-project">
-                <div class="wrap-nm-pr">
-                    <img src="assets/img-project/espresso.png" alt="">
-                    <h1>Espresso</h1>
-                </div>
-                <!-- STATUS -->
-                <div class="active-wr">
-                    <!-- use classname "active-status" "mt-status" "not-active-status" -->
-                    <!-- example = IF ACTIVE -->
-                    <div class="not-active-status"></div>
-                </div>
-                
-            </div>
-            <!-- SELECT YOUR SERVICE -->
-            <div class="list-on-run">
-                <!-- NETWORK TYPE -->
-                <!-- MAINNET -->
-                <!-- <div class="mainnet">
-                    <div class="cl-mn"></div>
-                    <p>Mainnet</p>
-                </div> -->
-                <!-- TESTNET -->
-                <div class="testnet">
-                    <div class="cl-ts"></div>
-                    <p>Testnet</p>
-                </div>
-                <!-- VALIDATOR -->
-                <!-- <div class="validator">
-                    <div class="cl-vl"></div>
-                    <p>Validator</p>
-                </div> -->
-                <!-- NODE / FULLNODE -->
-                <div class="node">
-                    <div class="cl-nd"></div>
-                    <p>Node</p>
-                </div>
-            </div>
-            <div class="wrap-btn-main">
-                <button class="delegate"><a target="_blank" href="https://www.espressosys.com/">Details</a></button>
-                <button class="guide"><a href="https://docs.prolinkmoon.xyz/101/welcome.html">Guide</a></button>
-            </div>
-        </div>            
-        
-        <!-- Hybrid -->
-        <div class="project">
-            <div class="name-project">
-                <div class="wrap-nm-pr">
-                    <img src="assets/img-project/hybrid.jpg" alt="">
-                    <h1>Hybrid</h1>
-                </div>
-                <!-- STATUS -->
-                <div class="active-wr">
-                    <!-- use classname "active-status" "mt-status" "not-active-status" -->
-                    <!-- example = IF ACTIVE -->
-                    <div class="not-active-status"></div>
-                </div>
-                
-            </div>
-            <!-- SELECT YOUR SERVICE -->
-            <div class="list-on-run">
-                <!-- NETWORK TYPE -->
-                <!-- MAINNET -->
-                <!-- <div class="mainnet">
-                    <div class="cl-mn"></div>
-                    <p>Mainnet</p>
-                </div> -->
-                <!-- TESTNET -->
-                <div class="testnet">
-                    <div class="cl-ts"></div>
-                    <p>Testnet</p>
-                </div>
-                <!-- VALIDATOR -->
-                <div class="validator">
-                    <div class="cl-vl"></div>
-                    <p>Validator</p>
-                </div>
-                <!-- NODE / FULLNODE -->
-                <!-- <div class="node">
-                    <div class="cl-nd"></div>
-                    <p>Node</p>
-                </div> -->
-            </div>
-            <div class="wrap-btn-main">
-                <button class="delegate"><a target="_blank" href="#">Delegate</a></button>
-                <button class="guide"><a href="https://docs.prolinkmoon.xyz/101/welcome.html">Guide</a></button>
-            </div>
-        </div>
-                <!-- Hybrid -->
-                <div class="project">
-                    <div class="name-project">
-                        <div class="wrap-nm-pr">
-                            <img src="assets/img-project/hybrid.jpg" alt="">
-                            <h1>Hybrid</h1>
-                        </div>
-                        <!-- STATUS -->
-                        <div class="active-wr">
-                            <!-- use classname "active-status" "mt-status" "not-active-status" -->
-                            <!-- example = IF ACTIVE -->
-                            <div class="not-active-status"></div>
-                        </div>
-                        
-                    </div>
-                    <!-- SELECT YOUR SERVICE -->
-                    <div class="list-on-run">
-                        <!-- NETWORK TYPE -->
-                        <!-- MAINNET -->
-                        <!-- <div class="mainnet">
-                            <div class="cl-mn"></div>
-                            <p>Mainnet</p>
-                        </div> -->
-                        <!-- TESTNET -->
-                        <div class="testnet">
-                            <div class="cl-ts"></div>
-                            <p>Testnet</p>
-                        </div>
-                        <!-- VALIDATOR -->
-                        <!-- <div class="validator">
-                            <div class="cl-vl"></div>
-                            <p>Validator</p>
-                        </div> -->
-                        <!-- NODE / FULLNODE -->
-                        <div class="node">
-                            <div class="cl-nd"></div>
-                            <p>Node</p>
-                        </div>
-                    </div>
-                    <div class="wrap-btn-main">
-                        <button class="delegate"><a target="_blank" href="https://buildonhybrid.com/">Details</a></button>
-                        <button class="guide"><a href="https://docs.prolinkmoon.xyz/101/welcome.html">Guide</a></button>
-                    </div>
-                </div>        
-        <!-- Wireshape -->
-                <div class="project">
-                    <div class="name-project">
-                        <div class="wrap-nm-pr">
-                            <img src="assets/img-project/wireshape.jpg" alt="">
-                            <h1>Wireshape</h1>
-                        </div>
-                        <!-- STATUS -->
-                        <div class="active-wr">
-                            <!-- use classname "active-status" "mt-status" "not-active-status" -->
-                            <!-- example = IF ACTIVE -->
-                            <div class="not-active-status"></div>
-                        </div>
-                        
-                    </div>
-                    <!-- SELECT YOUR SERVICE -->
-                    <div class="list-on-run">
-                        <!-- NETWORK TYPE -->
-                        <!-- MAINNET -->
-                        <!-- <div class="mainnet">
-                            <div class="cl-mn"></div>
-                            <p>Mainnet</p>
-                        </div> -->
-                        <!-- TESTNET -->
-                        <!-- <div class="testnet">
-                            <div class="cl-ts"></div>
-                            <p>Testnet</p>
-                        </div> -->
-                        <!-- VALIDATOR -->
-                        <div class="validator">
-                            <div class="cl-vl"></div>
-                            <p>Validator</p>
-                        </div>
-                        <!-- NODE / FULLNODE -->
-                        <div class="node">
-                            <div class="cl-nd"></div>
-                            <p>Node</p>
-                        </div>
-                    </div>
-                    <div class="wrap-btn-main">
-                        <button class="delegate"><a href="">Delegate</a></button>
-                        <button class="guide"><a href="https://docs.prolinkmoon.xyz/101/welcome.html">Guide</a></button>
-                    </div>
-                </div>
-
-        <!-- Artela -->
-                <div class="project">
-                    <div class="name-project">
-                        <div class="wrap-nm-pr">
-                            <img src="assets/img-project/artela.jpg" alt="">
-                            <h1>Artela</h1>
-                        </div>
-                        <!-- STATUS -->
-                        <div class="active-wr">
-                            <!-- use classname "active-status" "mt-status" "not-active-status" -->
-                            <!-- example = IF ACTIVE -->
-                            <div class="not-active-status"></div>
-                        </div>
-                        
-                    </div>
-                    <!-- SELECT YOUR SERVICE -->
-                    <div class="list-on-run">
-                        <!-- NETWORK TYPE -->
-                        <!-- MAINNET -->
-                        <!-- <div class="mainnet">
-                            <div class="cl-mn"></div>
-                            <p>Mainnet</p>
-                        </div> -->
-                        <!-- TESTNET -->
-                        <!-- <div class="testnet">
-                            <div class="cl-ts"></div>
-                            <p>Testnet</p>
-                        </div> -->
-                        <!-- VALIDATOR -->
-                        <div class="validator">
-                            <div class="cl-vl"></div>
-                            <p>Validator</p>
-                        </div>
-                        <!-- NODE / FULLNODE -->
-                        <div class="node">
-                            <div class="cl-nd"></div>
-                            <p>Node</p>
-                        </div>
-                    </div>
-                    <div class="wrap-btn-main">
-                        <button class="delegate"><a href="">Delegate</a></button>
-                        <button class="guide"><a href="https://docs.prolinkmoon.xyz/101/welcome.html">Guide</a></button>
-                    </div>
-                </div>
-                    
+                    </div>                   
                     
                     
                     
